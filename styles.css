@@ -892,14 +892,11 @@ h1, h2, h3, h4 {
   line-height: 1.45;
 }
 
-.quality-media-pair {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.quality-media-pair img {
-  border-radius: var(--radius-md);
+.quality-media img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--mint-border);
 }
@@ -1393,7 +1390,6 @@ h1, h2, h3, h4 {
   .hero-cta-group,
   .mini-features,
   .cert-cards,
-  .quality-media-pair,
   .reviews-grid {
     grid-template-columns: 1fr;
   }
