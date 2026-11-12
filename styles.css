@@ -112,6 +112,16 @@ h1, h2, h3, h4 {
   margin-inline: auto;
 }
 
+.section-heading.heading-wide {
+  max-width: 980px;
+}
+
+@media (min-width: 768px) {
+  .usage-title-nowrap {
+    white-space: nowrap;
+  }
+}
+
 .section-heading h2 {
   font-size: clamp(1.75rem, 3.4vw, 2.5rem);
   margin-bottom: 0.65rem;
@@ -742,11 +752,8 @@ h1, h2, h3, h4 {
 
 .usage-gallery {
   display: grid;
-  gap: 1rem;
-}
-
-.usage-gallery-2col {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
 }
 
 .quality-media-pair {
@@ -1363,7 +1370,6 @@ h1, h2, h3, h4 {
   .hero-cta-group,
   .mini-features,
   .cert-cards,
-  .usage-gallery-2col,
   .quality-media-pair,
   .reviews-grid {
     grid-template-columns: 1fr;
