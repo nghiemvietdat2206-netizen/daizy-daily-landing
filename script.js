@@ -99,6 +99,7 @@ function trackAdsEvent(eventName, payload = {}) {
 // 1. Countdown Timer
 function startCountdown(seconds = 9919) {
   const el = document.getElementById('countdownTimer');
+  if (!el) return;
   let remaining = seconds;
 
   setInterval(() => {
