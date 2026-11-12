@@ -1,0 +1,4 @@
+# Bỏ qua thư mục ảnh gốc chưa đổi tên (đã có bản tối ưu trong assets/)
+assets/raw/
+.DS_Store
+Thumbs.db
