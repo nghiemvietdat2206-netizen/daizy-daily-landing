@@ -222,17 +222,17 @@ h1, h2, h3, h4 {
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 2.75rem;
+  gap: 2.5rem;
 }
 
 .header-nav a {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.01em;
   color: #ffffff;
   position: relative;
-  padding: 0.4rem 0;
+  padding: 0.35rem 0;
   transition: color 0.25s ease;
 }
 
@@ -240,7 +240,7 @@ h1, h2, h3, h4 {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   width: 100%;
   height: 3px;
   border-radius: 2px;
@@ -259,8 +259,8 @@ h1, h2, h3, h4 {
 }
 
 .btn-header {
-  padding: 0.72rem 1.65rem;
-  font-size: 1rem;
+  padding: 0.75rem 1.8rem;
+  font-size: 1.06rem;
   font-weight: 700;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
 }
