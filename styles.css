@@ -221,62 +221,62 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 80;
-  background-color: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--mint-border);
+  background: linear-gradient(90deg, #006b63 0%, #008278 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 18px rgba(0, 75, 69, 0.14);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 74px;
   gap: 1rem;
 }
 
 .brand-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
 }
 
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.05;
-}
-
-.brand-daizy {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--teal-main);
-}
-
-.brand-daily {
-  color: var(--daisy-yellow-hover);
-}
-
-.brand-tag {
-  font-size: 0.66rem;
-  color: var(--ink-muted);
-  font-weight: 500;
+.brand-logo-img {
+  height: 46px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .header-nav {
   display: flex;
-  gap: 1.75rem;
+  gap: 2rem;
 }
 
 .header-nav a {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 600;
-  color: var(--ink-secondary);
+  color: rgba(255, 255, 255, 0.92);
+  position: relative;
   transition: color 0.2s ease;
 }
 
+.header-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--daisy-yellow);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
 .header-nav a:hover {
-  color: var(--teal-main);
+  color: var(--daisy-yellow);
+}
+
+.header-nav a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Hero Section */
@@ -562,13 +562,21 @@ h1, h2, h3, h4 {
   color: #6b534f;
 }
 
-/* Technology & 5D Softness */
-.tech-feature-grid {
+/* Origin & Technology & 5D Softness */
+.origin {
+  background-color: var(--mint-soft);
+}
+
+.tech-feature-grid,
+.hanging-feature-grid {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1.02fr 0.98fr;
   gap: 2.5rem;
   align-items: center;
-  margin-bottom: 4rem;
+}
+
+.hanging-feature-grid {
+  margin-top: 3.5rem;
 }
 
 .tech-image-card {
@@ -749,6 +757,22 @@ h1, h2, h3, h4 {
 .usage-gallery {
   display: grid;
   gap: 1rem;
+}
+
+.usage-gallery-2col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.quality-media-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.quality-media-pair img {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--mint-border);
 }
 
 .usage-gallery img {
@@ -1219,8 +1243,17 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-.footer-brand .brand-daizy {
-  color: var(--white);
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 0.4rem;
 }
 
 .footer-brand p {
@@ -1310,6 +1343,7 @@ h1, h2, h3, h4 {
   .hero-grid,
   .compare-grid,
   .tech-feature-grid,
+  .hanging-feature-grid,
   .softness-layout,
   .usage-grid,
   .quality-grid,
@@ -1330,6 +1364,8 @@ h1, h2, h3, h4 {
   .hero-cta-group,
   .mini-features,
   .cert-cards,
+  .usage-gallery-2col,
+  .quality-media-pair,
   .reviews-grid {
     grid-template-columns: 1fr;
   }
