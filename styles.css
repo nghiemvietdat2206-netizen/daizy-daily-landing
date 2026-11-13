@@ -355,35 +355,48 @@ h1, h2, h3, h4 {
   background-color: var(--white);
   border: 2px solid var(--teal-main);
   border-radius: var(--radius-md);
-  padding: 1.25rem;
-  box-shadow: var(--shadow-soft);
+  padding: 0.95rem 1.35rem;
+  box-shadow: 0 4px 18px rgba(0, 124, 115, 0.08);
   margin-bottom: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  max-width: 530px;
+}
+
+.offer-price-wrap {
+  flex: 1;
+  min-width: 0;
 }
 
 .offer-label {
   display: block;
   font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--ink-secondary);
-  margin-bottom: 0.25rem;
+  font-weight: 700;
+  color: var(--teal-dark);
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
 }
 
 .offer-prices {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  gap: 0.55rem;
+  margin-bottom: 0;
 }
 
 .price-now {
   font-family: var(--font-display);
-  font-size: 1.85rem;
+  font-size: 1.65rem;
+  font-weight: 800;
   color: var(--teal-main);
+  line-height: 1.1;
 }
 
 .price-old {
-  font-size: 1rem;
+  font-size: 0.92rem;
   color: var(--ink-muted);
   text-decoration: line-through;
 }
@@ -392,13 +405,22 @@ h1, h2, h3, h4 {
   background-color: #ffe8e3;
   color: #c83217;
   font-weight: 700;
-  font-size: 0.78rem;
-  padding: 0.2rem 0.6rem;
+  font-size: 0.74rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .hero-cta-group {
-  display: block;
+  flex-shrink: 0;
+}
+
+.hero-cta-group .btn {
+  padding: 0.85rem 1.55rem;
+  font-size: 0.98rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 6px 16px rgba(247, 181, 25, 0.32);
 }
 
 .social-proof-bar {
@@ -1383,6 +1405,27 @@ h1, h2, h3, h4 {
 @media (max-width: 640px) {
   body {
     padding-bottom: 72px;
+  }
+
+  .hero-offer-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    padding: 0.95rem 1.1rem;
+    max-width: 100%;
+  }
+
+  .offer-label {
+    white-space: normal;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    text-align: center;
   }
 
   .mini-features,
