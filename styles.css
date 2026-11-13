@@ -398,9 +398,7 @@ h1, h2, h3, h4 {
 }
 
 .hero-cta-group {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 0.75rem;
+  display: block;
 }
 
 .social-proof-bar {
@@ -1387,7 +1385,6 @@ h1, h2, h3, h4 {
     padding-bottom: 72px;
   }
 
-  .hero-cta-group,
   .mini-features,
   .cert-cards,
   .reviews-grid {
@@ -1403,9 +1400,7 @@ h1, h2, h3, h4 {
     background-color: var(--white);
     border-top: 1px solid var(--mint-border);
     padding: 0.65rem 1rem;
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 0.6rem;
+    display: block;
     box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.08);
   }
 }

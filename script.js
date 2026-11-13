@@ -3,10 +3,6 @@
    ========================================================================== */
 
 const CONFIG = {
-  // Đường dẫn gian hàng Shopee chính thức (lấy từ link bạn cung cấp)
-  shopeeUrl:
-    'https://shopee.vn/Kh%C4%83n-Kh%C3%B4-%C4%90a-N%C4%83ng-Cao-C%E1%BA%A5p-D%C3%B9ng-1-L%E1%BA%A7n-Daizy-Daily-D%E1%BB%8Bu-Nh%E1%BA%B9-Cho-B%C3%A9-S%C6%A1-Sinh-Ti%E1%BB%87n-L%E1%BB%A3i-Cho-C%E1%BA%A3-Gia-%C4%90%C3%ACnh-G%C3%B3i-200-T%E1%BB%9D-i.1862928708.50312572945?extraParams=%7B%22display_model_id%22%3A297723737081%2C%22model_selection_logic%22%3A3%7D&image_ids=vn-11134207-81ztc-muucbc2xssg681',
-
   // Chỉnh sửa giá & combo tại đây để đồng bộ toàn bộ trang
   packages: [
     {
@@ -262,7 +258,7 @@ successModal.addEventListener('click', (e) => {
   }
 });
 
-// Track Shopee & CTA clicks
+// Track CTA clicks
 document.querySelectorAll('[data-track]').forEach((el) => {
   el.addEventListener('click', () => {
     trackAdsEvent('InitiateCheckout', { source: el.dataset.track });
