@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css?v=20261117-01" />
+  <link rel="stylesheet" href="styles.css?v=20261117-02" />
 </head>
 <body>
   <!-- Header (Nền xanh ngọc thương hiệu để tôn logo chính thức Daizy Daily) -->
@@ -118,39 +118,95 @@
       </div>
     </section>
 
-    <!-- Pain Point vs Solution Comparison -->
-    <section class="comparison section-pad">
+    <!-- Công dụng (2-in-1 Interactive Tabs) — Đa di năng trong từng khoảnh khắc -->
+    <section class="usage section-pad" id="usage">
       <div class="container">
-        <div class="section-heading center">
-          <span class="eyebrow">Thay Đổi Thói Quen Nhỏ — Bảo Vệ Làn Da Lớn</span>
-          <h2>Vì sao nên ngưng dùng khăn vải ẩm &amp; khăn giấy thường?</h2>
+        <div class="section-heading center heading-wide">
+          <span class="eyebrow">Đa Di Năng Trong Từng Khoảnh Khắc</span>
+          <h2 class="usage-title-nowrap">Một Gói Khăn — Trọn Vẹn Nhu Cầu Cả Gia Đình</h2>
+          <div class="usage-tabs" role="tablist">
+            <button class="usage-tab active" data-usage="baby" role="tab" aria-selected="true">
+              Dành Cho Mẹ &amp; Bé Sơ Sinh
+            </button>
+            <button class="usage-tab" data-usage="skincare" role="tab" aria-selected="false">
+              Chu Trình Skincare &amp; Tẩy Trang
+            </button>
+          </div>
         </div>
 
-        <div class="compare-grid">
-          <div class="compare-card compare-bad">
-            <div class="compare-header">
-              <span class="compare-icon">✕</span>
-              <h3>Khăn Vải Truyền Thống &amp; Giấy Thường</h3>
+        <!-- Tab 1: Baby -->
+        <div class="usage-panel active" id="panel-baby">
+          <div class="usage-grid">
+            <div class="usage-gallery">
+              <img src="assets/baby-gentle.webp" alt="Khăn khô Daizy Daily mềm mại cho làn da non nớt của bé" />
             </div>
-            <ul>
-              <li>Khăn mặt treo nhà tắm dễ tích tụ vi khuẩn, nấm mốc gây mụn ẩn &amp; kích ứng.</li>
-              <li>Khăn giấy thông thường dễ rách, mủn nát và dính xơ bụi bông lên da mặt.</li>
-              <li>Nhiều loại khăn ướt công nghiệp chứa hương liệu, cồn dễ gây hăm đỏ cho trẻ sơ sinh.</li>
-              <li>Bề mặt sợi thô ráp gây ma sát, dễ làm tổn thương hàng rào bảo vệ da.</li>
-            </ul>
+            <div class="usage-details">
+              <h3>Nhẹ Nhàng Từ Những Cái Chạm Đầu Đời</h3>
+              <p>
+                Làn da trẻ sơ sinh mỏng hơn da người lớn gấp nhiều lần. Mẹ có thể dùng khăn khô Daizy Daily trực tiếp hoặc nhúng nước ấm sạch để thay thế khăn ướt chứa hóa chất.
+              </p>
+              <div class="use-case-list">
+                <div class="use-case">
+                  <span class="uc-dot">01</span>
+                  <div>
+                    <strong>Lau mồ hôi, lau mặt &amp; miệng sau ăn dặm</strong>
+                    <span>Mềm mịn, không gây đỏ rát vùng má và cằm bé.</span>
+                  </div>
+                </div>
+                <div class="use-case">
+                  <span class="uc-dot">02</span>
+                  <div>
+                    <strong>Nhúng nước ấm lau vệ sinh khi thay tã</strong>
+                    <span>Hạn chế tối đa hăm tã do chất bảo quản từ khăn ướt công nghiệp.</span>
+                  </div>
+                </div>
+                <div class="use-case">
+                  <span class="uc-dot">03</span>
+                  <div>
+                    <strong>Vệ sinh ti giả, đồ chơi &amp; mang theo ra ngoài</strong>
+                    <span>Gói 200 tờ rút gọn tiện lợi, dễ dàng bỏ túi bỉm sữa khi đi chơi.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <div class="compare-card compare-good">
-            <div class="compare-header">
-              <span class="compare-icon">✓</span>
-              <h3>Khăn Khô Đa Năng Daizy Daily (200 Tờ)</h3>
+        <!-- Tab 2: Skincare -->
+        <div class="usage-panel" id="panel-skincare">
+          <div class="usage-grid">
+            <div class="usage-gallery">
+              <img src="assets/single-use-clean.webp" alt="Khăn dùng 1 lần sạch hơn cho làn da hạn chế vi khuẩn từ khăn ẩm" />
             </div>
-            <ul>
-              <li><strong>Dùng 1 lần sạch tuyệt đối:</strong> Ngăn ngừa vi khuẩn quay lại tiếp xúc da mặt &amp; da bé.</li>
-              <li><strong>100% Plant-Based Rayon:</strong> Sợi thực vật mềm như bông, hoàn toàn không xơ sợi.</li>
-              <li><strong>Dai bền ngay cả khi ướt:</strong> Kéo giãn không rách, vắt khô dễ dàng để tái lau vật dụng.</li>
-              <li><strong>Kiểm soát chất lượng ISO &amp; GMP:</strong> An toàn cho làn da non nớt nhất của bé sơ sinh.</li>
-            </ul>
+            <div class="usage-details">
+              <h3>Không Chỉ Là Chiếc Khăn — Mà Là Một Bước Skincare</h3>
+              <p>
+                Các chuyên gia chăm sóc da luôn khuyên dùng khăn lau mặt dùng 1 lần để ngăn chặn vi khuẩn từ khăn vải ẩm ướt quay trở lại gây mụn viêm.
+              </p>
+              <div class="use-case-list">
+                <div class="use-case">
+                  <span class="uc-dot">01</span>
+                  <div>
+                    <strong>Thấm khô mặt ngay sau bước sữa rửa mặt</strong>
+                    <span>Thấm nước nhanh chỉ với 1 chạm nhẹ, bảo toàn độ ẩm tự nhiên.</span>
+                  </div>
+                </div>
+                <div class="use-case">
+                  <span class="uc-dot">02</span>
+                  <div>
+                    <strong>Tẩy trang dịu nhẹ &amp; hỗ trợ đắp toner mask</strong>
+                    <span>Sợi dai giữ nước tốt giúp tiết kiệm dung dịch tẩy trang và lotion.</span>
+                  </div>
+                </div>
+                <div class="use-case">
+                  <span class="uc-dot">03</span>
+                  <div>
+                    <strong>Tái sử dụng lau bàn trang điểm, điện thoại, kính mắt</strong>
+                    <span>Sau khi lau mặt, khăn vẫn còn dai sạch để lau đồ dùng cá nhân, cực kỳ tiết kiệm.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -264,99 +320,7 @@
       </div>
     </section>
 
-    <!-- Công dụng (2-in-1 Interactive Tabs) -->
-    <section class="usage section-pad" id="usage">
-      <div class="container">
-        <div class="section-heading center heading-wide">
-          <span class="eyebrow">Đa Di Năng Trong Từng Khoảnh Khắc</span>
-          <h2 class="usage-title-nowrap">Một Gói Khăn — Trọn Vẹn Nhu Cầu Cả Gia Đình</h2>
-          <div class="usage-tabs" role="tablist">
-            <button class="usage-tab active" data-usage="baby" role="tab" aria-selected="true">
-              Dành Cho Mẹ &amp; Bé Sơ Sinh
-            </button>
-            <button class="usage-tab" data-usage="skincare" role="tab" aria-selected="false">
-              Chu Trình Skincare &amp; Tẩy Trang
-            </button>
-          </div>
-        </div>
 
-        <!-- Tab 1: Baby -->
-        <div class="usage-panel active" id="panel-baby">
-          <div class="usage-grid">
-            <div class="usage-gallery">
-              <img src="assets/baby-gentle.webp" alt="Khăn khô Daizy Daily mềm mại cho làn da non nớt của bé" />
-            </div>
-            <div class="usage-details">
-              <h3>Nhẹ Nhàng Từ Những Cái Chạm Đầu Đời</h3>
-              <p>
-                Làn da trẻ sơ sinh mỏng hơn da người lớn gấp nhiều lần. Mẹ có thể dùng khăn khô Daizy Daily trực tiếp hoặc nhúng nước ấm sạch để thay thế khăn ướt chứa hóa chất.
-              </p>
-              <div class="use-case-list">
-                <div class="use-case">
-                  <span class="uc-dot">01</span>
-                  <div>
-                    <strong>Lau mồ hôi, lau mặt &amp; miệng sau ăn dặm</strong>
-                    <span>Mềm mịn, không gây đỏ rát vùng má và cằm bé.</span>
-                  </div>
-                </div>
-                <div class="use-case">
-                  <span class="uc-dot">02</span>
-                  <div>
-                    <strong>Nhúng nước ấm lau vệ sinh khi thay tã</strong>
-                    <span>Hạn chế tối đa hăm tã do chất bảo quản từ khăn ướt công nghiệp.</span>
-                  </div>
-                </div>
-                <div class="use-case">
-                  <span class="uc-dot">03</span>
-                  <div>
-                    <strong>Vệ sinh ti giả, đồ chơi &amp; mang theo ra ngoài</strong>
-                    <span>Gói 200 tờ rút gọn tiện lợi, dễ dàng bỏ túi bỉm sữa khi đi chơi.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab 2: Skincare -->
-        <div class="usage-panel" id="panel-skincare">
-          <div class="usage-grid">
-            <div class="usage-gallery">
-              <img src="assets/single-use-clean.webp" alt="Khăn dùng 1 lần sạch hơn cho làn da hạn chế vi khuẩn từ khăn ẩm" />
-            </div>
-            <div class="usage-details">
-              <h3>Không Chỉ Là Chiếc Khăn — Mà Là Một Bước Skincare</h3>
-              <p>
-                Các chuyên gia chăm sóc da luôn khuyên dùng khăn lau mặt dùng 1 lần để ngăn chặn vi khuẩn từ khăn vải ẩm ướt quay trở lại gây mụn viêm.
-              </p>
-              <div class="use-case-list">
-                <div class="use-case">
-                  <span class="uc-dot">01</span>
-                  <div>
-                    <strong>Thấm khô mặt ngay sau bước sữa rửa mặt</strong>
-                    <span>Thấm nước nhanh chỉ với 1 chạm nhẹ, bảo toàn độ ẩm tự nhiên.</span>
-                  </div>
-                </div>
-                <div class="use-case">
-                  <span class="uc-dot">02</span>
-                  <div>
-                    <strong>Tẩy trang dịu nhẹ &amp; hỗ trợ đắp toner mask</strong>
-                    <span>Sợi dai giữ nước tốt giúp tiết kiệm dung dịch tẩy trang và lotion.</span>
-                  </div>
-                </div>
-                <div class="use-case">
-                  <span class="uc-dot">03</span>
-                  <div>
-                    <strong>Tái sử dụng lau bàn trang điểm, điện thoại, kính mắt</strong>
-                    <span>Sau khi lau mặt, khăn vẫn còn dai sạch để lau đồ dùng cá nhân, cực kỳ tiết kiệm.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Chứng nhận (Quality & Safety Authority) -->
     <section class="quality section-pad" id="quality">
@@ -560,6 +524,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=20261117-01"></script>
+  <script src="script.js?v=20261117-02"></script>
 </body>
 </html>
