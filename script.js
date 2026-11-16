@@ -271,3 +271,30 @@ renderReviews();
 renderPackages();
 updateCheckoutSummary();
 trackAdsEvent('ViewContent', { content_name: 'Daizy Daily Khăn Khô Đa Năng 200 Tờ' });
+
+// Active Navigation Scrollspy (Desktop & Mobile)
+const navSections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.header-nav a');
+
+function updateActiveNav() {
+  const scrollPos = window.scrollY + 130;
+  let currentId = '';
+
+  navSections.forEach((section) => {
+    if (scrollPos >= section.offsetTop) {
+      currentId = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute('href').replace('#', '');
+    if (href === currentId) {
+      link.classList.add('nav-active');
+    } else {
+      link.classList.remove('nav-active');
+    }
+  });
+}
+
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
