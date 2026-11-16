@@ -283,14 +283,7 @@ h1, h2, h3, h4 {
   font-size: 1.06rem;
   font-weight: 700;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
-}
-
-.btn-text-desktop {
-  display: inline;
-}
-
-.btn-text-mobile {
-  display: none;
+  white-space: nowrap;
 }
 
 /* Hero Section */
@@ -1395,19 +1388,24 @@ h1, h2, h3, h4 {
 
   .header-inner {
     height: 58px;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0.85rem;
-    gap: 0.5rem;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 0.75rem;
+    gap: 0.4rem;
   }
 
   .brand-logo {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
   }
 
   .brand-logo-img {
-    height: 42px;
+    height: 40px;
+    width: auto;
   }
 
   .header-actions {
@@ -1418,7 +1416,7 @@ h1, h2, h3, h4 {
   }
 
   .btn-header {
-    padding: 0.42rem 0.95rem;
+    padding: 0.42rem 0.85rem;
     font-size: 0.82rem;
     font-weight: 700;
     border-radius: 999px;
@@ -1427,17 +1425,18 @@ h1, h2, h3, h4 {
   }
 
   .header-nav {
-    flex: 1;
+    flex: 1 1 auto;
     min-width: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    order: 2;
-    gap: 0.4rem;
-    width: auto;
-    border-top: none;
-    margin: 0;
-    padding: 0;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    order: 2 !important;
+    gap: 0.35rem;
+    width: auto !important;
+    border-top: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -1449,12 +1448,12 @@ h1, h2, h3, h4 {
 
   .header-nav a {
     font-family: var(--font-display);
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     font-weight: 700;
     letter-spacing: 0;
     color: #ffffff;
     white-space: nowrap;
-    padding: 0.25rem 0.42rem;
+    padding: 0.22rem 0.35rem;
     border-radius: 6px;
     transition: all 0.2s ease;
   }
@@ -1493,36 +1492,33 @@ h1, h2, h3, h4 {
 
   .header-inner {
     height: 52px;
-    padding-left: 0.45rem;
-    padding-right: 0.45rem;
-    gap: 0.25rem;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    gap: 0.2rem;
   }
 
   .brand-logo-img {
-    height: 34px;
-  }
-
-  .btn-text-desktop {
-    display: none;
-  }
-
-  .btn-text-mobile {
-    display: inline;
+    height: 32px;
   }
 
   .btn-header {
-    padding: 0.38rem 0.7rem;
-    font-size: 0.76rem;
+    padding: 0.36rem 0.65rem;
+    font-size: 0.74rem;
   }
 
   .header-nav {
-    gap: 0.12rem;
+    gap: 0.1rem;
     padding: 0 0.05rem;
   }
 
   .header-nav a {
-    font-size: 0.76rem;
-    padding: 0.2rem 0.26rem;
+    font-size: 0.74rem;
+    padding: 0.18rem 0.22rem;
   }
 
   .hero-offer-card {
