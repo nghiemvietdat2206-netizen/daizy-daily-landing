@@ -45,12 +45,12 @@ html {
 }
 
 section[id] {
-  scroll-margin-top: 92px;
+  scroll-margin-top: 96px;
 }
 
 @media (max-width: 960px) {
   section[id] {
-    scroll-margin-top: 58px;
+    scroll-margin-top: 65px;
   }
 }
 
@@ -216,8 +216,8 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 78px;
-  gap: 1.35rem;
+  height: 84px;
+  gap: 1.5rem;
 }
 
 .brand-logo {
@@ -232,7 +232,7 @@ h1, h2, h3, h4 {
 }
 
 .brand-logo-img {
-  height: 56px;
+  height: 62px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -247,7 +247,7 @@ h1, h2, h3, h4 {
 
 .header-nav a {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: 0.01em;
   color: #ffffff;
@@ -280,7 +280,7 @@ h1, h2, h3, h4 {
 
 .btn-header {
   padding: 0.75rem 1.8rem;
-  font-size: 1.06rem;
+  font-size: 1.15rem;
   font-weight: 700;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
   white-space: nowrap;
@@ -1387,14 +1387,14 @@ h1, h2, h3, h4 {
   }
 
   .header-inner {
-    height: 54px;
+    height: 60px;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     align-items: center !important;
     justify-content: space-between !important;
-    padding: 0 0.85rem;
-    gap: 0.45rem;
+    padding: 0 0.95rem;
+    gap: 0.5rem;
   }
 
   .brand-logo {
@@ -1404,7 +1404,7 @@ h1, h2, h3, h4 {
   }
 
   .brand-logo-img {
-    height: 40px;
+    height: 44px;
     width: auto;
   }
 
@@ -1416,8 +1416,8 @@ h1, h2, h3, h4 {
   }
 
   .btn-header {
-    padding: 0.4rem 0.9rem;
-    font-size: 0.82rem;
+    padding: 0.45rem 1rem;
+    font-size: 0.95rem;
     font-weight: 700;
     border-radius: 999px;
     white-space: nowrap;
@@ -1432,7 +1432,7 @@ h1, h2, h3, h4 {
     align-items: center !important;
     justify-content: center !important;
     order: 2 !important;
-    gap: 0.4rem;
+    gap: 0.45rem;
     width: auto !important;
     border-top: none !important;
     margin: 0 !important;
@@ -1448,12 +1448,12 @@ h1, h2, h3, h4 {
 
   .header-nav a {
     font-family: var(--font-display);
-    font-size: 0.86rem;
+    font-size: 0.98rem;
     font-weight: 700;
     letter-spacing: 0.01em;
     color: #ffffff;
     white-space: nowrap;
-    padding: 0.25rem 0.4rem;
+    padding: 0.28rem 0.48rem;
     border-radius: 6px;
     transition: all 0.2s ease;
   }
@@ -1471,13 +1471,26 @@ h1, h2, h3, h4 {
 
   .hero-grid,
   .compare-grid,
-  .tech-feature-grid,
   .hanging-feature-grid,
   .softness-layout,
   .usage-grid,
   .quality-grid,
   .order-layout {
     grid-template-columns: 1fr;
+  }
+
+  .tech-feature-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .tech-feature-grid .tech-copy {
+    order: 1;
+  }
+
+  .tech-feature-grid .tech-image-card {
+    order: 2;
   }
 
   .reviews-grid {
@@ -1491,37 +1504,37 @@ h1, h2, h3, h4 {
   }
 
   .header-inner {
-    height: 50px;
+    height: 56px;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     align-items: center !important;
     justify-content: space-between !important;
-    padding-left: 0.45rem;
-    padding-right: 0.45rem;
-    gap: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    gap: 0.35rem;
   }
 
   .brand-logo-img {
-    height: 34px;
+    height: 38px;
   }
 
   .btn-header {
-    padding: 0.38rem 0.75rem;
-    font-size: 0.8rem;
+    padding: 0.42rem 0.85rem;
+    font-size: 0.92rem;
     font-weight: 700;
   }
 
   .header-nav {
     justify-content: flex-start !important;
-    gap: 0.2rem;
-    padding: 0 0.1rem;
+    gap: 0.25rem;
+    padding: 0 0.15rem;
   }
 
   .header-nav a {
-    font-size: 0.82rem;
+    font-size: 0.96rem;
     font-weight: 700;
-    padding: 0.22rem 0.38rem;
+    padding: 0.28rem 0.45rem;
     letter-spacing: 0.01em;
   }
 
