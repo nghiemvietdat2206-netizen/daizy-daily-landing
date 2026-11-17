@@ -1469,7 +1469,6 @@ h1, h2, h3, h4 {
     display: none;
   }
 
-  .hero-grid,
   .compare-grid,
   .hanging-feature-grid,
   .softness-layout,
@@ -1477,6 +1476,49 @@ h1, h2, h3, h4 {
   .quality-grid,
   .order-layout {
     grid-template-columns: 1fr;
+  }
+
+  /* Mobile Hero Reorder: Image before Pricing/Order & 4.9/5 Rating */
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero-content {
+    display: contents;
+  }
+
+  .trust-pill-row {
+    order: 1;
+  }
+
+  .hero-title {
+    order: 2;
+  }
+
+  .hero-subtitle {
+    order: 3;
+  }
+
+  .hero-bullets {
+    order: 4;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-media {
+    order: 5;
+    margin-bottom: 1.25rem;
+    width: 100%;
+  }
+
+  .hero-offer-card {
+    order: 6;
+    margin-bottom: 1rem;
+  }
+
+  .social-proof-bar {
+    order: 7;
   }
 
   .tech-feature-grid {
