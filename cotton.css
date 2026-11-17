@@ -1,31 +1,38 @@
 ﻿/* ==========================================================================
-   DAIZY DAILY — Brand Design System & Facebook Ads CRO Styles
-   Brand Colors: Teal (#007C73), Mint (#EAF6F4), Daisy Yellow (#F7B519)
+   DAIZY DAILY — Brand Design System & Facebook Ads CRO Styles (Khăn Tím)
+   Brand Colors: Royal Purple (#583994), Lavender Mist (#F4EFFF), Daisy Yellow (#F7B519)
    ========================================================================== */
 
 :root {
+  --purple-main: #583994;
+  --purple-dark: #371f5e;
+  --purple-deep: #23123d;
+  --lavender-bg: #f4efff;
+  --lavender-soft: #faf8ff;
+  --lavender-border: #e2d5f8;
+
   --teal-main: #583994;
-  --teal-dark: #005b54;
-  --teal-deep: #113a36;
+  --teal-dark: #371f5e;
+  --teal-deep: #23123d;
   --mint-bg: #f4efff;
   --mint-soft: #faf8ff;
-  --mint-border: #cde5e2;
+  --mint-border: #e2d5f8;
   --daisy-yellow: #f7b519;
   --daisy-yellow-hover: #e2a20d;
   --daisy-yellow-soft: #fff5d6;
   --shopee-orange: #ee4d2d;
   --shopee-orange-hover: #d73b1d;
 
-  --ink-primary: #133b37;
-  --ink-secondary: #486763;
-  --ink-muted: #6c8784;
+  --ink-primary: #261b36;
+  --ink-secondary: #594c6e;
+  --ink-muted: #8c7e9e;
   --white: #ffffff;
 
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --shadow-soft: 0 12px 32px rgba(88, 57, 148, 0.08);
-  --shadow-card: 0 6px 20px rgba(17, 58, 54, 0.06);
+  --shadow-card: 0 6px 20px rgba(55, 31, 94, 0.06);
 
   --font-display: 'Quicksand', 'Be Vietnam Pro', sans-serif;
   --font-body: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -106,7 +113,7 @@ h1, h2, h3, h4 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--teal-main);
-  background-color: #dcf2ef;
+  background-color: #ede3ff;
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
   margin-bottom: 0.85rem;
@@ -207,9 +214,9 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 80;
-  background: linear-gradient(90deg, #00665f 0%, #583994 50%, #008f84 100%);
+  background: linear-gradient(135deg, #371f5e 0%, #583994 50%, #442475 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 4px 20px rgba(0, 75, 69, 0.18);
+  box-shadow: 0 4px 20px rgba(88, 57, 148, 0.18);
 }
 
 .header-inner {
@@ -679,6 +686,13 @@ h1, h2, h3, h4 {
   border: 1px solid var(--mint-border);
 }
 
+.softness-img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
 .softness-steps {
   display: grid;
   gap: 0.65rem;
@@ -843,7 +857,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--teal-main);
-  background-color: #dcf2ef;
+  background-color: #ede3ff;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -1015,7 +1029,7 @@ h1, h2, h3, h4 {
 
 /* Order Section */
 .order-section {
-  background: linear-gradient(180deg, var(--mint-bg) 0%, #def1ee 100%);
+  background: linear-gradient(180deg, var(--mint-bg) 0%, #f1e8ff 100%);
 }
 
 .order-sub {
@@ -1052,7 +1066,7 @@ h1, h2, h3, h4 {
 
 .package-card.selected {
   border-color: var(--teal-main);
-  background-color: #f2fbf9;
+  background-color: #f8f4ff;
   box-shadow: var(--shadow-soft);
 }
 
@@ -1146,7 +1160,7 @@ h1, h2, h3, h4 {
   display: inline-block;
   font-size: 0.76rem;
   font-weight: 600;
-  background-color: #dcf2ef;
+  background-color: #ede3ff;
   color: var(--teal-dark);
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
@@ -1328,7 +1342,7 @@ h1, h2, h3, h4 {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(17, 58, 54, 0.55);
+  background-color: rgba(35, 18, 61, 0.65);
   backdrop-filter: blur(4px);
   z-index: 150;
   display: flex;
@@ -1653,4 +1667,19 @@ h1, h2, h3, h4 {
 .btn-shopee:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(238, 77, 45, 0.45);
+}
+.tech-image-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.combo-visual-note img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  display: block;
 }
